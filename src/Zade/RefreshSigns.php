@@ -4,6 +4,7 @@ declare(strict_types=1);
 namespace Zade;
 
 use pocketmine\scheduler\PluginTask;
+use pocketmine\utils\TextFormat as TE;
 use Zade\BuildMain;
 use Zade\ResetMap;
 use Zade\GameSender;
