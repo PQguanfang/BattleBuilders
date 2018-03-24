@@ -54,7 +54,7 @@ class BuildMain extends PluginBase implements Listener {
 		{
 			$this->getServer()->loadLevel($lev);
 		}
-                $temas = array("Car","Panda","Throne","Zombie","Enderman","Sad","Happy","House","Truck","Gun","Monkey","Wing","Money","TV","Weapon","Head","Heart","Smartphone","Creeper","Bridge","Chestplate","Halloween","Christmas","Sheep","Pig");
+                $temas = array("Car","Panda","Throne","Zombie","Chicken","Enderman","Sad","Happy","House","Truck","Gun","Monkey","Wing","Money","TV","Weapon","Head","Heart","Smartphone","Creeper","Bridge","Chestplate","Halloween","Christmas","Sheep","Pig");
 		if($config->get("temas")==null)
 		{
 			$config->set("temas",$temas);
