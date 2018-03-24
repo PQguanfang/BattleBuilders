@@ -355,7 +355,7 @@ class BuildMain extends PluginBase implements Listener {
 	}
 	
 	public function onCommand(CommandSender $player, Command $cmd, string $label, array $args): bool {
-        switch($cmd->getName()){
+        switch(strtolower($cmd->getName()){
 			case "buildcreate":
                             if($player->isOp())
                             {
