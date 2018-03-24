@@ -10,6 +10,6 @@ commands:
         description: Create a BattleBuilders arena!
         aliases: ["bb","battlebuilders"]
 permissions:
-    battlebuilders.op:
+    battlebuilders.command.op:
         default: op
   
