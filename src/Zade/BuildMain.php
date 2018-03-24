@@ -35,7 +35,7 @@ use pocketmine\Server;
 
 class BuildMain extends PluginBase implements Listener {
 
-        public $prefix = TE::GOLD . "     »• " . TE::DARK_RED. TE::BOLD . "Battle" . TE::YELLOW." Builders". TE::RESET . TE::GOLD . " •«  " . TE::WHITE ."";
+        public $prefix = TE::GOLD . "    »• " . TE::DARK_RED. TE::BOLD . "Battle" . TE::YELLOW." Builders". TE::RESET . TE::GOLD . " •«  " . TE::WHITE ."";
 	public $mode = 0;
 	public $arenas = array();
 	public $currentLevel = "";
@@ -432,7 +432,7 @@ class BuildMain extends PluginBase implements Listener {
                                                 goto sinslots;
                                                 with:
                                                 $slots->save();
-                                                $player->sendMessage($this->prefix . "You entered the BattleBuilders game!");
+                                                $player->sendMessage($this->prefix . "You entered the Battle Builders game!");
                                                 foreach($level->getPlayers() as $playersinarena)
                                                 {
                                                 $playersinarena->sendMessage($player->getNameTag() .TE::GREEN. " joined!");
@@ -503,7 +503,7 @@ class BuildMain extends PluginBase implements Listener {
 				);
                                 foreach ($files as $datos) {
 					if (!$datos->isDir()) {
-						$relativePath = $name . '/' . substr($datos, strlen($path) + 1);
+						$relativePath = $name . '/' . substr($datos, strlen($path) + string);
 						$zip->addFile($datos, $relativePath);
 					}
 				}
