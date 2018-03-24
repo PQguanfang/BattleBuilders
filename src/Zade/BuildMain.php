@@ -359,7 +359,7 @@ class BuildMain extends PluginBase implements Listener {
 			case "buildcreate":
                             if($player->isOp())
                             {
-                                if(!empty($args[0])
+                                if(!empty($args[0]))
 				{
                                     if(file_exists($this->getServer()->getDataPath() . "/worlds/" . $args[0]))
                                     {
