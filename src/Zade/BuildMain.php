@@ -503,7 +503,7 @@ class BuildMain extends PluginBase implements Listener {
 				);
                                 foreach ($files as $datos) {
 					if (!$datos->isDir()) {
-						$relativePath = $name . '/' . substr($datos, strlen($path), string);
+						$relativePath = $name . '/' . substr($datos, strlen($path), 1);
 						$zip->addFile($datos, $relativePath);
 					}
 				}
