@@ -402,7 +402,7 @@ class BuildMain extends PluginBase implements Listener {
 		{
 			if(($this->mode==26)&&(in_array($player->getName(), $this->op)))
 			{
-				$tile->setText(TE::AQUA . "• §aJoin •",TE::GREEN  . "§e0 / 16","§f" . $this->currentLevel,$this->prefix);
+				$tile->setText(TE::AQUA . "§aJoin",TE::GREEN  . "§e0 / 16","§f" . $this->currentLevel,$this->prefix);
 				$this->refreshArenas();
 				$this->currentLevel = "";
 				$this->mode = 0;
