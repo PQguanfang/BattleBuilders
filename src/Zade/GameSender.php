@@ -56,7 +56,7 @@ class GameSender extends PluginTask {
 					}
 					else
 					{
-                                                if(count($playersArena)>=6)
+                                                if(count($playersArena)>=3)
                                                 {
                                                     $config->set($arena . "start", 1);
                                                     $config->save();
