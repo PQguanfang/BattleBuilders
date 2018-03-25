@@ -6,6 +6,7 @@ namespace Zade;
 use pocketmine\scheduler\PluginTask;
 use pocketmine\utils\TextFormat as TE;
 use Zade\BuildMain;
+use pocketmine\item\Item;
 use Zade\ResetMap;
 use Zade\RefreshSigns;
 use pocketmine\level\sound\PopSound;
