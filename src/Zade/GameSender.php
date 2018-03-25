@@ -166,7 +166,7 @@ class GameSender extends PluginTask {
                                                                 $second = ($time - 170) % 60;
                                                                 $timer = ($time - 170 - $second) / 60;
                                                                 $minutes = $timer % 60;
-                                                                $seconds = str_pad($second, 2, "0", string);
+                                                                $seconds = str_pad($second, 2, "0", 1);
                                                                 if($time>170)
                                                                 {
                                                                     foreach($playersArena as $pla)
