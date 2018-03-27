@@ -2,7 +2,7 @@
 | :---: | :---: |
  [![Download](https://img.shields.io/badge/download-latest-blue.svg)](https://poggit.pmmp.io/ci/Zadezter/BattleBuilders/~) | [![HitCount](http://hits.dwyl.io/Zadezter/BattleBuilders.svg)](http://hits.dwyl.io/Zadezter/BattleBuilders)
 
-# BattleBuilders # 60% Completed! (Maintenance)
+# BattleBuilders #
 
 This is a minigames plugin for Minecraft: Bedrock Edition servers!
 [ Supports for v1.2+ / (3.0.0-ALPHA11) ]
