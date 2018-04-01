@@ -36,15 +36,15 @@ class RefreshSigns extends PluginTask {
 					$aop = 0;
                                         $namemap = str_replace("§f", "", $text[2]);
 					foreach($allplayers as $player){if($player->getLevel()->getFolderName()==$namemap){$aop=$aop+1;}}
-					$ingame = TE::AQUA . "§aJoin";
+					$ingame = TE::AQUA . "§a可加入";
 					$config = new Config($this->plugin->getDataFolder() . "/config.yml", Config::YAML);
 					if($config->get($namemap . "PlayTime")!=470)
 					{
-						$ingame = TE::DARK_PURPLE . "§cRunning";
+						$ingame = TE::DARK_PURPLE . "§c游戏中";
 					}
 					elseif($aop>=16)
 					{
-						$ingame = TE::GOLD . "§dFull";
+						$ingame = TE::GOLD . "§d满员了";
 					}
                                         $t->setText($ingame,TE::YELLOW  . $aop . " / 16",$text[2],$this->prefix);
 				}
