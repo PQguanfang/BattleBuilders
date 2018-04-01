@@ -74,7 +74,7 @@ class BuildMain extends PluginBase implements Listener {
 	}
         
         public function onDisable(): void{
-        	$this->getLogger()->notice(TE::RED . "Zadezter has disabled the BattleBuilders! The game is offline!");
+        	$this->getLogger()->notice(TE::RED . "建筑大赛小游戏插件已取消加载!");
             $config = new Config($this->getDataFolder() . "/config.yml", Config::YAML);
             $slots = new Config($this->getDataFolder() . "/slots.yml", Config::YAML);
             if($config->get("arenas")!=null)
