@@ -1,31 +1,22 @@
-| Poggit | Hit Counts |
-| :---: | :---: |
- [![Download](https://img.shields.io/badge/download-latest-blue.svg)](https://poggit.pmmp.io/ci/Zadezter/BattleBuilders/~) | [![HitCount](http://hits.dwyl.io/Zadezter/BattleBuilders.svg)](http://hits.dwyl.io/Zadezter/BattleBuilders)
+# 建筑大赛 #
 
-# BattleBuilders #
-
-This is a minigames plugin for Minecraft: Bedrock Edition servers!
-[ Supports for v1.2+ / (3.0.0-ALPHA11) ]
+这是一个用于我的世界基岩版的服务器小游戏插件!
+[ 支持 v1.2+ / (3.0.0-ALPHA11) ]
  
-# How To Setup?
-• Join your server.
+# 如何建立?
+• 加入你的服务器.
 
-• Do /buildcreate <world> to start creating the arena!
-  
-• Tap a plot to register the spawn. (Must 16 spawn plot(s) you have registered!)
+• 发送指令 /buildcreate <世界名字> 来创建游戏世界!
+• 点击一个地块来新注册一个建筑点. (必须注册16个!)
+• 然后，点击一个出生点来作为等待大厅. (不要在其他世界注册!)
+• 接下来，你会被传送回主城，放置一个木牌并点击来注册一个加入牌!
+• 全部完成了!点击木牌来加入游戏吧!
 
-• After that, tap a lobby to register the waiting lobby! (Don't register on other world!)
+# 已有功能!
 
-• You will automatically returned to the main spawn, then put a sign and tap it!
+• 完美的地图重置系统!
+• 新机制!
+• 新的头衔!
 
-• All set! Your arena has been registered! You can now join!
+  还有更多....
 
-# Features!
-
-• Auto-Reset Arena Map!
-
-• New themes!
-
-• New prefix!
-
-  and more....
