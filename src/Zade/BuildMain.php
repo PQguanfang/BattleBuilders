@@ -197,7 +197,7 @@ class BuildMain extends PluginBase implements Listener {
             }
         }
         
-          public function Puntuar(PlayerItemHeldEvent $event) {
+        public function Puntuar(PlayerItemHeldEvent $event) {
             $player = $event->getPlayer();
             $level = $player->getLevel()->getFolderName();
             if(in_array($level,$this->arenas))
