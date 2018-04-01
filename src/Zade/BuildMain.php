@@ -41,8 +41,15 @@ class BuildMain extends PluginBase implements Listener {
 	public $currentLevel = "";
         public $op = array();
 	
+	class BuildMain extends PluginBase implements Listener {
+        public $prefix = TE::GOLD . "    »• " . TE::DARK_RED. TE::BOLD . "建筑" . TE::YELLOW." 大师". TE::RESET . TE::GOLD . " •«  " . TE::WHITE ."";
+	public $mode = 0;
+	public $arenas = array();
+	public $currentLevel = "";
+        public $op = array();
+	
 	public function onEnable(): void{
-		$this->getLogger()->notice(TE::GREEN . "Zadezter has enabled the BattleBuilders! You can now enjoy for playing this game!");
+		$this->getLogger()->notice(TE::GREEN . "建筑大师小游戏汉化版已成功加载!汉化来自YuIo_PQ于YuIo插件包，未经允许，不得转载!");
                 $this->getServer()->getPluginManager()->registerEvents($this ,$this);
 		@mkdir($this->getDataFolder());
 		$config = new Config($this->getDataFolder() . "/config.yml", Config::YAML);
@@ -54,7 +61,7 @@ class BuildMain extends PluginBase implements Listener {
 		{
 			$this->getServer()->loadLevel($lev);
 		}
-                $temas = array("Car","Panda","Throne","Zombie","Chicken","Enderman","Sad","Happy","House","Truck","Gun","Monkey","Wing","Money","TV","Weapon","Head","Heart","Smartphone","Creeper","Bridge","Chestplate","Halloween","Christmas","Sheep","Pig");
+                $temas = array("汽车","熊猫","皇冠","僵尸","鸡","末影人","伤心","开心","房子","卡车","枪","猴子","翅膀","钱","电视","武器","头颅","心脏","智能手机","苦力怕","桥","花园","万圣节","圣诞节","羊","猪");
 		if($config->get("temas")==null)
 		{
 			$config->set("temas",$temas);
