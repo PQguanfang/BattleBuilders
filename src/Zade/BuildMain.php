@@ -197,7 +197,7 @@ class BuildMain extends PluginBase implements Listener {
             }
         }
         
-        public function Puntuar(PlayerItemHeldEvent $event) {
+          public function Puntuar(PlayerItemHeldEvent $event) {
             $player = $event->getPlayer();
             $level = $player->getLevel()->getFolderName();
             if(in_array($level,$this->arenas))
@@ -210,32 +210,32 @@ class BuildMain extends PluginBase implements Listener {
                     {
                         if($event->getItem()->getDamage()==14)
                         {
-                            $player->sendTip(TE::BOLD.TE::DARK_RED."WORST!");
+                            $player->sendTip(TE::BOLD.TE::DARK_RED."很差!");
                         }
                         elseif($event->getItem()->getDamage()==6)
                         {
-                            $player->sendTip(TE::BOLD.TE::RED."BAD?");
+                            $player->sendTip(TE::BOLD.TE::RED."还行?");
                         }
                         elseif($event->getItem()->getDamage()==5)
                         {
-                            $player->sendTip(TE::BOLD.TE::GREEN."OKAY?");
+                            $player->sendTip(TE::BOLD.TE::GREEN."及格?");
                         }
                         elseif($event->getItem()->getDamage()==13)
                         {
-                            $player->sendTip(TE::BOLD.TE::DARK_GREEN."THAT'S GOOD!");
+                            $player->sendTip(TE::BOLD.TE::DARK_GREEN."比较好!");
                         }
                         elseif($event->getItem()->getDamage()==11)
                         {
-                            $player->sendTip(TE::BOLD.TE::DARK_PURPLE."COOL!");
+                            $player->sendTip(TE::BOLD.TE::DARK_PURPLE."好!");
                         }
                         elseif($event->getItem()->getDamage()==4)
                         {
-                            $player->sendTip(TE::BOLD.TE::GOLD."PERFECT!");
+                            $player->sendTip(TE::BOLD.TE::GOLD."完美!");
                         }
                     }
                     else
                     {
-                        $player->sendTip(TE::BOLD.TE::RED."You do not need to vote own plot!");
+                        $player->sendTip(TE::BOLD.TE::RED."你不能给自己的作品评分!");
                     }
                 }
             }
@@ -265,24 +265,24 @@ class BuildMain extends PluginBase implements Listener {
         
         public function getConfirm($damage){
             if($damage == 14){
-                return TE::DARK_RED."WORST!";
+                return TE::DARK_RED."很差!";
             }
             if($damage == 6){
-                return TE::RED."BAD?";
+                return TE::RED."还行?";
             }
             if($damage == 5){
-                return TE::GREEN."OKAY?";
+                return TE::GREEN."及格?";
             }
             if($damage == 13){
-                return TE::DARK_GREEN."THAT'S GOOD!";
+                return TE::DARK_GREEN."比较好!";
             }
             if($damage == 11){
-                return TE::DARK_PURPLE."COOL!";
+                return TE::DARK_PURPLE."好!";
             }
             if($damage == 4){
-                return TE::GOLD."PERFECT!";
+                return TE::GOLD."完美!";
             }
-            return TE::DARK_RED."WORST!";
+            return TE::DARK_RED."很差!";
         }
         
         public function onMove(PlayerMoveEvent $event)
